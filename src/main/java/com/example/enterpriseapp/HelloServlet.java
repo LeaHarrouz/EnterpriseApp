@@ -3,10 +3,12 @@ import com.example.enterpriseapp.SessionBean;
 import com.example.enterpriseapp.SessionBeanInterface;
 
 import java.io.*;
+import javax.ejb.EJB;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 @WebServlet(name = "HelloServlet", value = "/")
+@EJB
 public class HelloServlet extends HttpServlet {
     //private String message;
 
